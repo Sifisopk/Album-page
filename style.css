@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121212;
+
+}
+
+.container{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) ), url(images/3d-cartoon-character-djing-party.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+}
+
+
+#logo {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    z-index: 1000;
+}
+.menu{
+     position: fixed;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.menu i{
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#menu-bar{
+    margin-bottom: 50px;
+}
+
+.container-box{
+    display: flex;
+}
+
+#vertical-text{
+     font-family: sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transform: rotate(270deg);
+     margin-left: -100px;
+    margin-right: -250px;
+}
+
+.album-cover{
+    display: flex;
+    left:25%;
+    margin-top: 200px;
+    position: relative;
+}
+
+#cover-img{
+    width: 250px;
+    height: 300px;
+}
+
+.album-cover h1{
+    padding: 60px 0 0 40px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.album-cover h2{
+    padding: 10px 0 0 40px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#play-resume-btn{
+    background-color: rgb(255, 138, 173);
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 50px 0 0 40px;
+}
+
+#btn-2{
+    background-color: transparent;
+    border: 1px solid #fdfdfd;
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 50px 0 0 40px;
+}
+
+#play-resume-btn:hover{
+background-color: #fdfdfd;
+color: #000;
+cursor: pointer;
+} 
+
+#btn-2:hover{
+background-color: #fdfdfd;
+color: #000;
+cursor: pointer;
+} 
+
+
+/*.track-list-container{
+    background-color: #202020;
+}*/
+
+.streaming-platforms {
+    display: flex;
+    color: #FFF;
+    border: 1px solid #fff;
+    width: 450px;
+    margin: 30px;
+    margin-left: 200px;
+}
+
+.streaming-platforms i{
+    height: 100%;
+    color: #FFF;
+    border-left: 1px solid #fff;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+#track-header {
+     padding: 60px 0 0 40px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 600;
+     margin-left: 160px;
+     letter-spacing: 5px;
+}
+
+#track-list-header{
+    padding: 20px 0 0 40px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 600;
+     margin-left: 160px;
+     letter-spacing: 5px;
+}
+
+
+
+
+track {
+            display: flex;
+            align-items: center;
+            padding: 110px;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s;
+        }
+       
+      
+        .track-info {
+    margin-top: 50px;
+    padding-left: 150px;
+    font-family: serif;
+     color: #e0e0e0;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 70px;
+    letter-spacing: 2px;
+        }
+     
+.track-info i{
+    float: right;
+    margin-right: 250px;
+}
+
+
+        audio {
+    width: 70%;
+    height: 60px;
+    margin-left: 200px;
+
+
+}
+
+audio::-webkit-media-controls-enclosure {
+background-color: #121212;
+  border: none;
+}
+
+
+audio::-webkit-media-controls-panel {
+background-color: #121212;
+
+  
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-time-remaining-display {
+  filter: invert(1); /* white icons */
+}
+
+
+
+
+
+#album-list-h1{
+    text-align: center;
+    padding: 60px 0 0 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #fdfdfd;
+    font-size: 37px;
+  
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.album-list {
+    display: flex; /* Lay albums in a row */
+    gap: 20px;     /* Space between album blocks */
+    justify-content: center;
+    flex-wrap: wrap; /* Optional: allow wrapping on small screens */
+}
+
+.album {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack image and paragraph */
+
+}
+
+.album img {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+}
+
+.album h5 {
+    margin-top: 10px;
+    color: white; /* Or any color that fits your background */
+    letter-spacing: 1px;
+}
+
+.album h3{
+    font-family: "Noto Sans";
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.line-1{
+    position: relative;
+    left: 15%;
+    border-bottom: 2px solid #747474;
+    width: 70%;
+}
+
+
+.contact-info{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   display: flex; /* Lay albums in a row */
+    gap: 20px;     /* Space between album blocks */
+    justify-content: center;
+    flex-wrap: wrap; /* Optional: allow wrapping on small screens */
+}
+
+.contact-links{
+   display: flex;
+    flex-direction: column;
+}
+
+.contact-links a{
+    padding: 10px 50px 0px 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+      color: #c2bfbf;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.terms{
+     display: flex;
+    flex-direction: column;
+}
+
+.terms a{
+    padding: 10px 50px 0px 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+       color: #c2bfbf;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.contact-form h3{
+    padding: 10px 50px 0px 0px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+       color: #c2bfbf;
+}
+
+.contact-form p{
+    padding-top: 10px;
+    color: #c2bfbf;
+
+}
+
+.input-field {
+  border: #121212;
+  color: #eee;
+  font-size: 15px;
+  width: 50%;
+  height: 40px;
+  background: transparent;
+  border-right: none;
+  border-bottom: 1px solid #fff;
+  padding-inline: 20px;
+  outline: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+     margin-top: 50px;
+    margin-bottom: 50px;
+   display: flex; /* Lay albums in a row */
+    gap: 20px;     /* Space between album blocks */
+    justify-content: center;
+    flex-wrap: wrap; /* Optional: allow wrapping on small screens */
+}
+
+footer p{
+    padding-right: 50px;
+    font-family: sans-serif;
+    color: #fdfdfd;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.icons{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icons i{
+    padding: 0px 0px  30px 30px ;
+}
+
+#js-icon{
+    float: right;
+}
