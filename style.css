@@ -198,7 +198,8 @@ track {
      
 .track-info i{
     float: right;
-    margin-right: 250px;
+    margin-right: 255px;
+    cursor: pointer;
 }
 
 
@@ -242,45 +243,51 @@ audio::-webkit-media-controls-time-remaining-display {
     margin-bottom: 20px;
     font-family: sans-serif;
     color: #fdfdfd;
-    font-size: 37px;
+    font-size: 30px;
   
     letter-spacing: 5px;
     text-transform: capitalize;
 }
 
 .album-list {
-    display: flex; /* Lay albums in a row */
-    gap: 20px;     /* Space between album blocks */
+    display: flex;
+    
     justify-content: center;
-    flex-wrap: wrap; /* Optional: allow wrapping on small screens */
+    flex-wrap: wrap; 
 }
 
 .album {
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     display: flex;
     flex-direction: column; /* Stack image and paragraph */
 
 }
 
 .album img {
+    cursor: pointer;
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 150px;
+    width: 120px;
     height: auto;
+    transition: 200ms;
+}
+
+.album img:hover{
+    transform: translateY(5px);
 }
 
 .album h5 {
-    margin-top: 10px;
-    color: white; /* Or any color that fits your background */
+    margin-top: 5px;
+    color: #c2bfbf; 
     letter-spacing: 1px;
 }
 
 .album h3{
     font-family: "Noto Sans";
     color: #fff;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 
@@ -368,10 +375,10 @@ footer{
     flex-direction: row;
      margin-top: 50px;
     margin-bottom: 50px;
-   display: flex; /* Lay albums in a row */
-    gap: 20px;     /* Space between album blocks */
+   display: flex;
+    gap: 20px;   
     justify-content: center;
-    flex-wrap: wrap; /* Optional: allow wrapping on small screens */
+    flex-wrap: wrap; 
 }
 
 footer p{
@@ -386,7 +393,7 @@ footer p{
 
 .icons{
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 

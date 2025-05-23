@@ -17,7 +17,7 @@
     let currentPlayingAudio = null;
     let hasStarted = false;
 
-    // Create audio elements for each track
+    // audio elements for each track
     function createTrackElements(trackList) {
         playlistElement.innerHTML = '';
         audioElements = [];
@@ -51,7 +51,7 @@
                     audioElements[currentIndex].play();
                 } else {
                     hasStarted = false;
-                    playResumeBtn.textContent = "▶️ Play";
+                    playResumeBtn.textContent = "▶ Play";
                 }
             });
 
