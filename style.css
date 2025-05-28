@@ -50,21 +50,22 @@ body{
 }
 
 #vertical-text{
-     font-family: sans-serif;
+     font-family: 'Courier New', Courier, monospace;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
     transform: rotate(270deg);
-     margin-left: -100px;
-    margin-right: -250px;
+     margin-left: -150px;
+    margin-right: -220px;
+    margin-top: 60px;
 }
 
 .album-cover{
     display: flex;
     left:25%;
     margin-top: 200px;
-    position: relative;
+    position: absolute;
 }
 
 #cover-img{
@@ -73,46 +74,59 @@ body{
 }
 
 .album-cover h1{
-    padding: 60px 0 0 40px;
-    margin-top: 20px;
-    font-family: sans-serif;
+    padding: 20px 0 0 40px;
+    margin-top: 5px;
     color: #fff;
-    font-size: 37px;
-    font-weight: 600;
-    text-transform: capitalize;
+    font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+  
 }
 
 .album-cover h2{
     padding: 10px 0 0 40px;
-    font-family: sans-serif;
-    color: #fff;
-    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c2bfbf;
+    font-size: 25px;
     font-weight: 600;
     text-transform: capitalize;
 }
 
+
+.profile{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.profile img{
+  margin-left: 20px;
+   width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
 #play-resume-btn{
     background-color: rgb(255, 138, 173);
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     border: none;
     font-family: sans-serif;
     color: #FFF;
     font-size: 17px;
     font-weight: 600;
-    margin: 50px 0 0 40px;
+    margin: 10px 0 0 40px;
 }
 
 #btn-2{
     background-color: transparent;
     border: 1px solid #fdfdfd;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     font-family: sans-serif;
     color: #FFF;
     font-size: 17px;
     font-weight: 600;
-    margin: 50px 0 0 40px;
+    margin: 20px 0 0 40px;
 }
 
 #play-resume-btn:hover{
@@ -127,10 +141,6 @@ color: #000;
 cursor: pointer;
 } 
 
-
-/*.track-list-container{
-    background-color: #202020;
-}*/
 
 .streaming-platforms {
     display: flex;
@@ -188,10 +198,10 @@ track {
         .track-info {
     margin-top: 50px;
     padding-left: 150px;
-    font-family: serif;
+    font-family: "Fugaz One";
      color: #e0e0e0;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 70px;
     letter-spacing: 2px;
         }
@@ -268,7 +278,7 @@ audio::-webkit-media-controls-time-remaining-display {
     cursor: pointer;
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 120px;
+    width: 100px;
     height: auto;
     transition: 200ms;
 }
@@ -403,4 +413,196 @@ footer p{
 
 #js-icon{
     float: right;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+  .album-cover {
+    position: absolute;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #vertical-text {
+   display: none;
+  }
+
+  #cover-img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .album-cover h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+
+  .album-cover h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+
+  .streaming-platforms {
+    width: 40%;
+    flex-direction: row;
+    margin-left: 250px;
+  }
+
+  .streaming-platforms i {
+    padding: 15px 0;
+    border-left: none;
+    text-align: center;
+    border-left: 1px solid #fff;
+  }
+
+  #track-list-header{
+    margin-left: 250px;
+  }
+
+  .track-info {
+    padding-left: 70px;
+    margin-left: 0;
+  }
+
+  audio {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .menu {
+    top: 20px;
+    right: 5px;
+  }
+
+  #logo {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+  }
+
+.container-box{
+  margin-left: 50px;
+}
+
+  #vertical-text {
+    display: none;
+  }
+
+
+  #album-list-h1{
+width: 80%;
+font-size: 20px;
+  }
+
+  .album-cover {
+    margin-top: 150px;
+  }
+
+  #cover-img {
+    width: 150px;
+    height: 180px;
+  }
+
+  .album-cover h1 {
+    font-size: 28px;
+  }
+
+  .album-cover h2 {
+    font-size: 18px;
+  }
+
+  #play-resume-btn,
+  #btn-2 {
+    width: 140px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .streaming-platforms {
+    flex-direction: row;
+    width: 70%;
+    margin: 20px 0  0 20px ;
+  }
+
+  .streaming-platforms i {
+    border-left: 1px solid #FFF;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #track-header,
+  #track-list-header {
+    font-size: 24px;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  .track-info {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+
+  audio {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .album-list-h1{
+    width: 50%;
+  }
+  .album-list{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-field {
+    margin-left: 50px
+  }
+
+ .contact-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   display: flex; /* Lay albums in a row */
+
+}
+
+.contact-info p{
+ margin-left: 70px;
+}
+
+.contact-links{
+  text-align: center;
+  width: 50%;
+   display: flex;
+    flex-direction: column;
+}
+
+.contact-form{
+  padding-left: 16px;
+}
+
+.terms{
+  text-align: center;
+  width: 50%;
+     display: flex;
+    flex-direction: column;
+}
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer p {
+    padding: 10px ;
+  }
 }

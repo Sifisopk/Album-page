@@ -1,12 +1,12 @@
  const tracks = [
-        { title: "Song One",  src: "music\\anatii_wena_mp3_56406.mp3" },
-        { title: "Song Two", src: "music\\asibe_happy_radio_mp3_56107.mp3" },
-        { title: "Song three", src: "music\\black_coffee_you_need_me_feat._sun-el_musician_maxine_ashley_mp3_55801.mp3" },
-        { title: "Song four", src: "music\\jeremy_loops_waves_4k_mp3_58287.mp3" },
-        { title: "Song five", src: "music\\love_everlasting_mp3_56744.mp3" },
-        { title: "Song six", src: "music\\mike_posner_i_took_a_pill_in_ibiza_lyrics_mp3_58773.mp3" },
-        { title: "Song seven", src: "music\\shekhinah_please_mr_official_audio_mp3_58566.mp3" },
-        { title: "Song eight", src: "music\\shekhinah_suited_official_audio_mp3_58414.mp3" }
+        { title: "Anatii wena",  src: "music/anatii_wena_mp3_56406.mp3" },
+        { title: "Asibe Happy", src: "music/asibe_happy_radio_mp3_56107.mp3" },
+        { title: "Black Coffee: you need me", src: "music/black_coffee_you_need_me_feat._sun-el_musician_maxine_ashley_mp3_55801.mp3" },
+        { title: "Jeremy Loops: waves", src: "music/jeremy_loops_waves_4k_mp3_58287.mp3" },
+        { title: "Love Everlasting", src: "music/love_everlasting_mp3_56744.mp3" },
+        { title: "Mike Posner: i took a pill in ibiza", src: "music/mike_posner_i_took_a_pill_in_ibiza_lyrics_mp3_58773.mp3" },
+        { title: "Shekhinah: please mr", src: "music/shekhinah_please_mr_official_audio_mp3_58566.mp3" },
+        { title: "Shekhinah: suited", src: "music/shekhinah_suited_official_audio_mp3_58414.mp3" }
     ];
 
     const playlistElement = document.getElementById('playlist');
@@ -31,17 +31,19 @@
             audio.preload = "metadata";
             audio.controls = true;
 
-            audio.addEventListener('play', () => {
+                    audio.addEventListener('play', () => {
                 if (currentPlayingAudio && currentPlayingAudio !== audio) {
                     currentPlayingAudio.pause();
                 }
                 currentPlayingAudio = audio;
-                playResumeBtn.textContent = "⏸ Pause";
+                currentIndex = index;
+                hasStarted = true;
+                playResumeBtn.innerHTML = '<i class="fas fa-pause"></i> Pause';
             });
 
             audio.addEventListener('pause', () => {
                 if (currentPlayingAudio === audio) {
-                    playResumeBtn.textContent = "▶ Resume";
+                    playResumeBtn.innerHTML = '<i class="fas fa-play"></i> Resume';
                 }
             });
 
@@ -51,11 +53,11 @@
                     audioElements[currentIndex].play();
                 } else {
                     hasStarted = false;
-                    playResumeBtn.textContent = "▶ Play";
+                    playResumeBtn.innerHTML = '<i class="fas fa-play"></i> Play';
                 }
             });
 
-           trackElement.innerHTML = `<div class="track-info"> <i class="fa-solid fa-share-nodes"></i> ${track.title}</div>`;
+           trackElement.innerHTML = `<div class="track-info"></i> ${track.title}</div>`;
 
             trackElement.appendChild(audio);
             playlistElement.appendChild(trackElement);
