@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) ), url(images/3d-cartoon-character-djing-party.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) ), url(images/3d-cartoon-character-djing-party.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -270,7 +270,7 @@ audio::-webkit-media-controls-time-remaining-display {
     text-align: center;
     padding: 10px;
     display: flex;
-    flex-direction: column; /* Stack image and paragraph */
+    flex-direction: column; 
 
 }
 
@@ -294,8 +294,8 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 .album h3{
-    font-family: "Noto Sans";
-    color: #fff;
+
+    color: #c2bfbf;
     font-weight: 200;
     font-size: 18px;
 }
@@ -487,9 +487,7 @@ footer p{
     width: 40px;
   }
 
-.container-box{
-  margin-left: 50px;
-}
+
 
   #vertical-text {
     display: none;
