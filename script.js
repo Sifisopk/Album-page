@@ -1,12 +1,12 @@
  const tracks = [
-        { title: "Anatii wena",  src: "music/anatii_wena_mp3_56406.mp3" },
-        { title: "Asibe Happy", src: "music/asibe_happy_radio_mp3_56107.mp3" },
-        { title: "Black Coffee: you need me", src: "music/black_coffee_you_need_me_feat._sun-el_musician_maxine_ashley_mp3_55801.mp3" },
-        { title: "Jeremy Loops: waves", src: "music/jeremy_loops_waves_4k_mp3_58287.mp3" },
-        { title: "Love Everlasting", src: "music/love_everlasting_mp3_56744.mp3" },
-        { title: "Mike Posner: i took a pill in ibiza", src: "music/mike_posner_i_took_a_pill_in_ibiza_lyrics_mp3_58773.mp3" },
-        { title: "Shekhinah: please mr", src: "music/shekhinah_please_mr_official_audio_mp3_58566.mp3" },
-        { title: "Shekhinah: suited", src: "music/shekhinah_suited_official_audio_mp3_58414.mp3" }
+        { title: "Track 1",  src: "music/no-copyright-music-lofi-330213.mp3" },
+        { title: "Track 2", src: "music/no-copyright-music-soft-background-380073.mp3" },
+        { title: "Track 3", src: "music/no-copyright-music-soft-background-382054.mp3" },
+        { title: "Track 4", src: "music/no-copyright-music-331167.mp3" },
+        { title: "Track 5", src: "music/no-copyright-music-371133.mp3" },
+        { title: "Track 6", src: "music/no-copyright-music-382074.mp3" },
+        { title: "Track 7", src: "music/background-corporate-music-short-version-65sec-no-copyright-music-378978.mp3" },
+        { title: "Track 8", src: "music/background-technology-music-no-copyright-369855.mp3" }
     ];
 
     const playlistElement = document.getElementById('playlist');

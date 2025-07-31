@@ -297,7 +297,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
     color: #c2bfbf;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 
@@ -364,6 +364,7 @@ audio::-webkit-media-controls-time-remaining-display {
 .contact-form p{
     padding-top: 10px;
     color: #c2bfbf;
+    font-family: sans-serif;
 
 }
 
@@ -499,8 +500,19 @@ width: 80%;
 font-size: 20px;
   }
 
+.container-box{
+  position: absolute;
+  margin-left: 50px;
+}
+
   .album-cover {
     margin-top: 150px;
+    margin-right: 150px;
+  }
+
+.profile{
+    display: flex;
+    margin-right: 50px
   }
 
   #cover-img {
@@ -584,8 +596,9 @@ font-size: 20px;
     flex-direction: column;
 }
 
-.contact-form{
-  padding-left: 16px;
+.contact-form h3{
+  text-align: center;
+  margin: 5px;
 }
 
 .terms{
@@ -604,3 +617,4 @@ font-size: 20px;
     padding: 10px ;
   }
 }
+
